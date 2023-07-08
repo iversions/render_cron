@@ -8,6 +8,8 @@ import re
 from string import ascii_lowercase
 from itertools import groupby
 from statistics import mean
+import urllib3
+import io
 # from checkdt import checkdate
 
 lowcase = set(ascii_lowercase)
@@ -52,6 +54,9 @@ def checkdate(string):
 
 
 def invextract(path):
+    http = urllib3.PoolManager()
+    temp = io.BytesIO()
+    temp.write(http.request("GET",path).data)
     el = []
     with pdfplumber.open(path) as page:
         firstpage = page.pages[0]
