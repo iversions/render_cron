@@ -399,15 +399,9 @@ def invextract(path):
 
     data = [
         {
-            "Company Name": companyName
-        },
-        {
-            "Invoice Number": invoiceNumber
-        },
-        {
-            "Invoice Date": invoiceDate
-        },
-        {
+            "Company Name": companyName,
+            "Invoice Date": invoiceDate,
+            "Invoice Number": invoiceNumber,
             "Invoice Total": invoiceTotal
         }
         ]
