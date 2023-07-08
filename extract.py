@@ -54,11 +54,11 @@ def checkdate(string):
 
 
 def invextract(path):
-    http = urllib3.PoolManager()
-    temp = io.BytesIO()
-    temp.write(http.request("GET",path).data)
+    # http = urllib3.PoolManager()
+    # temp = io.BytesIO()
+    # temp.write(http.request("GET",path).data)
     el = []
-    with pdfplumber.open(temp) as page:
+    with pdfplumber.open(path) as page:
         firstpage = page.pages[0]
         charst = firstpage.extract_words()
         f_ext_text = firstpage.extract_text()
