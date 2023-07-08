@@ -83,9 +83,8 @@ else:
         # Create the plain-text and HTML version of your message
         text = """\
         Hi,
-        How are you?
-        Real Python has many great tutorials:
-        www.realpython.com"""
+        Please find below extracted data.    
+        """
         html = """\
         <html>
         <body>
