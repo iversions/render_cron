@@ -51,7 +51,7 @@ else:
             fileName = part.get_filename()
             if bool(fileName):
                 # filePath = os.path.join('/document',fileName)
-                filePath = os.path.join('/home/shashi/Documents/WorkingFolder/venv/afcons/rootfolder/mailtest',fileName)
+                filePath = os.path.join('/code',fileName)
                 if not os.path.isfile(filePath):
                     fp = open(filePath, 'wb')
                     fp.write(part.get_payload(decode=True))
