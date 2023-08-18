@@ -519,6 +519,3 @@ def invextract(path):
     
     jstring = json.dumps(data,indent=4)
     return(jstring)
-
-callf=invextract(filpath)
-print(callf)
