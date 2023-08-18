@@ -308,7 +308,7 @@ def invextract(path):
 
         dataa = " ".join(str(i) for i in z1)    
 
-        nlp_ner = spacy.load('/copy/model-best')
+        nlp_ner = spacy.load('/code/model-best')
 
         docs = nlp_ner(dataa)
         ents1 = list(docs.ents)
